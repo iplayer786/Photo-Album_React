@@ -1,5 +1,5 @@
-# Photo Album React
-Written by Altamish Lalani
+# Photo Album
+Written by Altamish Lalani, using React.
 
 ## Warning this project is not complete. However, the elements are coming together successfully 🏁.
 
