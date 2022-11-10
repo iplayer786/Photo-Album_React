@@ -1,4 +1,4 @@
-# Photo-Album_React
+# Photo Album React
 Written by Altamish Lalani
 
 ## Warning this project is not complete. However, the elements are coming together successfully 🏁.
