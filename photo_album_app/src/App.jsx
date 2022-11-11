@@ -1,22 +1,24 @@
 import { React } from "react";
-import{Typography, AppBar,Card, CardActionArea, CardContent, CardMediam, CssBaseline, Grid, Toolbar, Container } from '@material-ui/core';
+import{Typography, AppBar, Button, Card, CardActionArea, CardContent, CardMediam, CssBaseline, Grid, Toolbar, Container } from '@material-ui/core';
 //Yes there are extra components because we are learning to use them.
 import {PhotoCamera} from '@material-ui/icons';
+import useStyles from "./styles";
 
 const App = () => {
+    const classes = useStyles();
     return (
        <>
             <CssBaseline />
             <AppBar position="relative">
                 <Toolbar>
-                    <PhotoCamera />
+                    <PhotoCamera className={classes.icon}/>
                     <Typography variant="h6">
                         Photo Album
                     </Typography>
                 </Toolbar>
             </AppBar>
             <main>
-                <div>
+                <div className={classes.container}>
                     <Container maxWidth="sm">
                         <Typography variant="h2" align="center" color="textPrimary" gutterBottom>
                             Photo Album
@@ -24,8 +26,21 @@ const App = () => {
                         <Typography variant="h5" align="center" color="textSecondary" paragraph>
                             Hello everyone! This is a photo album and I'm trying to make this sentence as long as possible to test this paragraph out.
                         </Typography>
+                        <div className={classes.buttons}>
+                            <Grid container spacing={2} justify="center">
+                                <Grid item>
+                                    <Button variant="contained" color="primary">
+                                        See my photos
+                                    </Button>
+                                </Grid>
+                                <Grid item>
+                                    <Button variant="outlined" color="primary">
+                                        Secondary Action
+                                    </Button>
+                                </Grid>
+                            </Grid>
+                        </div>
                     </Container>
-
                 </div>
             </main>
        </>
